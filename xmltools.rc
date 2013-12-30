@@ -1,0 +1,10 @@
+<!DOCTYPE KrossScripting SYSTEM "kpartgui.dtd">
+<KrossScripting>
+    <collection name="edit" text="Edit">
+        <script text="Copy XML Tag"
+            name="xmltools"
+            interpreter="python"
+            enabled="true"
+            file="xmltools.py" />
+    </collection>
+</KrossScripting>
