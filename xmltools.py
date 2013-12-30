@@ -8,7 +8,7 @@ import Kross,Lokalize,Project,Editor
 import sys,os,time,datetime,re,string,codecs
 
 def get_tags(text):
-    matches = re.findall(ur"(<(.+?).*?>.+?</\2\s?>)" , text,
+    matches = re.findall(ur"(<(.+?).*?>.+?</\n?\2\s?>)" , text,
         re.MULTILINE |re.DOTALL)
     tags = [match[0] for match in matches]
     return tags
